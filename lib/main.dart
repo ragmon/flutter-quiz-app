@@ -17,26 +17,32 @@ ThemeData _buildAppTheme() {
 }
 
 TextTheme _appTextTheme(TextTheme base) {
-  return base.copyWith(
-    headline: base.headline.copyWith(
-      fontWeight: FontWeight.w500,
-    ),
-    title: base.title.copyWith(
-      fontSize: 18.0,
-    ),
-    caption: base.caption.copyWith(
-      fontWeight: FontWeight.w400,
-      fontSize: 14.0,
-    ),
-    button: base.button.copyWith(
+  return base
+      .copyWith(
+        headline: base.headline.copyWith(
+          fontWeight: FontWeight.w500,
+        ),
+        title: base.title.copyWith(
+          fontSize: 18.0,
+        ),
+        caption: base.caption.copyWith(
+          fontWeight: FontWeight.w400,
+          fontSize: 14.0,
+        ),
+        button: base.button.copyWith(
 //      fontSize: 23.9,
-    ),
-    body1: base.body1.copyWith(
-      fontSize: 16.9,
-      color: Colors.white,
-      fontFamily: "Lobster",
-    ),
-  );
+            ),
+        body1: base.body1.copyWith(
+          fontSize: 16.9,
+          color: Colors.white,
+          fontFamily: "Lobster",
+        ),
+      )
+      .apply(
+        fontFamily: "Lobster",
+        displayColor: Colors.amber,
+//        bodyColor: Colors.red,
+      );
 }
 
 void main() => runApp(
