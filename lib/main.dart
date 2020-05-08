@@ -34,6 +34,7 @@ TextTheme _appTextTheme(TextTheme base) {
     body1: base.body1.copyWith(
       fontSize: 16.9,
       color: Colors.white,
+      fontFamily: "Lobster",
     ),
   );
 }
